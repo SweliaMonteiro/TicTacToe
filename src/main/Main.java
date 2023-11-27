@@ -46,7 +46,7 @@ public class Main {
         int boardDimension = players.size() + 1;
 		
 		System.out.print("Please enter comma separted Winning  Stratergies : (1)Row / (2)Column / (3)Diagonal / (4)Anti-Diagonal : "); 
-		String inputWinningStrategies = scanner.nextLine();
+		String inputWinningStrategies = scanner.next();
 		String[] inputWinningStrategiesArray = inputWinningStrategies.split(",");
 		List<WinningStrategy> winningStrategies = new ArrayList<>();
 		for(String inputWinningStratergy:inputWinningStrategiesArray) {
