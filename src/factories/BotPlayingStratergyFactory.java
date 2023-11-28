@@ -23,7 +23,6 @@ public class BotPlayingStratergyFactory {
 		}
 		
 		return null;
-		
 	}
 
 }
