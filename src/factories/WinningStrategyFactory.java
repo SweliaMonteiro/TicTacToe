@@ -8,7 +8,7 @@ import strategies.winningStrategies.WinningStrategy;
 
 public class WinningStrategyFactory {
 	
-public static WinningStrategy getWinningStrategy(String winningStrategy, int boardDimension) {
+	public static WinningStrategy getWinningStrategy(String winningStrategy, int boardDimension) {
 		
 		if(winningStrategy.trim().equalsIgnoreCase("1")) {
 			return new RowWinningStrategy(boardDimension);
