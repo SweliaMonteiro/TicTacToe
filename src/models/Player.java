@@ -30,9 +30,9 @@ public class Player {
 			column = scanner.nextInt();
 		}
 		
-		Cell cell = new Cell(row, column, this, CellState.FILLED);
-		Move move = new Move(cell, this);
-		board.getBoard().get(row).set(column, cell);
+		board.getBoard().get(row).get(column).setCellState(CellState.FILLED);
+		board.getBoard().get(row).get(column).setPlayer(this);
+		Move move = new Move(board.getBoard().get(row).get(column), this);
 		return move;
 	}
 
