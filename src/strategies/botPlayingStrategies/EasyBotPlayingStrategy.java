@@ -13,14 +13,12 @@ public class EasyBotPlayingStrategy implements BotPlayingStrategy {
 		
 		for(int i = 0; i < board.getSize(); i++) {
 			for(int j = 0; j < board.getSize(); j++) {
-				
 				if(board.getBoard().get(i).get(j).getCellState().equals(CellState.EMPTY)) {
-					Cell cell = new Cell(i, j, botPlayer, CellState.FILLED);
-					Move move = new Move(cell, botPlayer);
-					board.getBoard().get(i).set(j, cell);
+					board.getBoard().get(i).get(j).setCellState(CellState.FILLED);
+					board.getBoard().get(i).get(j).setPlayer(botPlayer);
+					Move move = new Move(board.getBoard().get(i).get(j), botPlayer);
 					return move;
 				}
-				
 			}
 		}
 		
