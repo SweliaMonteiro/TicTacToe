@@ -14,10 +14,10 @@ public class GameController {
 
 	public Game startGame(int boardDimension, List<Player> players, List<WinningStrategy> winningStrategies) throws BotCountException, PlayerCountDimensionMismatchException, SymbolCountException {
 		return Game.getBuilder()
-				   .setBoardDimension(boardDimension)
-			       .setPlayers(players)
-				   .setWinningStratergies(winningStrategies)
-				   .build();
+			   .setBoardDimension(boardDimension)
+			   .setPlayers(players)
+		           .setWinningStratergies(winningStrategies)
+		           .build();
 	}
 
 	public void makeMove(Game game) {
