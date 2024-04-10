@@ -1,1 +1,1 @@
-Design a simple TicTacToe game.
+Design a TicTacToe game using required Design Patterns.
